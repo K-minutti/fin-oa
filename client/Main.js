@@ -1,19 +1,17 @@
-import React from 'react';
-import Sidebar from './Sidebar';
+import React from "react";
+import Sidebar from "./Sidebar";
+import Card from "./Card";
 
 const Main = () => {
+  return (
+    <div id="main" className="row container">
+      <Sidebar />
+      <div className="main-container">
+        <Card />
+        <Card />
+      </div>
+    </div>
+  );
+};
 
-	return  (
-	<div id="main" className="row container>
-	<Sidebar/>
-	<div class="container">
-
-	
-	<h1>MAIN - MANE</h1>
-		<p>Hello this is the main where everything will render</p>
-	</div>
-	</div>
-	)
-}
-
-export default Main
+export default Main;
