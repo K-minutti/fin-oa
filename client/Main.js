@@ -1,17 +1,18 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import Card from "./Card";
-
+import { withRouter, Switch, Route } from "react-router-dom";
+import Overview from "./Overview";
 const Main = () => {
   return (
     <div id="main" className="row container">
       <Sidebar />
       <div className="main-container">
-        <Card />
-        <Card />
+        <Switch>
+          <Route path="/overview" component={Overview} />
+        </Switch>
       </div>
     </div>
   );
 };
 
-export default Main;
+export default withRouter(Main);
