@@ -5,3 +5,4 @@ secrets.js
 .DS_store
 npm_debug.log
 secrets.js
+data
