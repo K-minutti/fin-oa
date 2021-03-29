@@ -1,6 +1,9 @@
 const db = require("./db");
-//models go here
+const CustomerLoan = require("./customerLoan");
+const CustomerDemographic = require("./customerDemographic");
 
 module.exports = {
   db,
+  CustomerLoan,
+  CustomerDemographic,
 };

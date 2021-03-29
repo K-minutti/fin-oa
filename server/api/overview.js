@@ -1,8 +1,14 @@
 const router = require("express").Router();
-// const {Model} require('../db')
+const { CustomerLoan, CustomerDemographic } = require("../db");
 
-// router.get('/'), async (req,res, next) => {
-//     try {
-//         const
-//     }
-// }
+//GET /api/overview
+router.get("/", async (req, res, next) => {
+  try {
+    const data = await CustomerLoan.findByPk("23344");
+    res.json(data);
+  } catch (e) {
+    next(e);
+  }
+});
+
+module.exports = router;

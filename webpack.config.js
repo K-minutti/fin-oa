@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  mode: "none",
   entry: ["babel-polyfill", "./client/index.js"],
   output: {
     path: __dirname,
