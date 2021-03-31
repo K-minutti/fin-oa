@@ -6,7 +6,8 @@
 
 body {
   background-color: #f4f5f7;
-  color: rgb(155, 155, 155);
+  /* color: rgb(155, 155, 155); */
+  color: #828282;
   text-align: center;
   margin: 0px;
 }
